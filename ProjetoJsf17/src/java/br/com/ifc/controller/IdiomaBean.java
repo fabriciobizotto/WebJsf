@@ -37,6 +37,7 @@ public class IdiomaBean implements Serializable {
     }
 
     public Locale getLocale() {
+        System.out.println(locale);
         return locale;
     }
 

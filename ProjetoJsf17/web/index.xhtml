@@ -14,14 +14,6 @@
                 <ui:define name="content">
                     <h:outputText value="#{msg.clienteTela}" />
                     <hr />
-                    <h:form id="idiomas">
-                        <h:selectOneMenu value="#{idiomaBean.linguagem}" onchange="submit()" immediate="true">
-                            <f:selectItem itemValue="pt_BR" itemLabel="Portugês" />
-                            <f:selectItem itemValue="en" itemLabel="Inglês" />
-                        </h:selectOneMenu>
-                    </h:form>
-                    <hr />
-
                     <h:form prependId="false">
                         <h:panelGrid columns="3">
                             <h:outputLabel for="nome" value="#{msg.nome}" />
@@ -55,7 +47,7 @@
                             </h:inputText>
                             <h:messages for="dataNascimento" />
                             <h:outputLabel for="tipoPessoa" value="#{msg.tipoPessoa}" />
-                            <h:selectOneMenu id="tipoPessoa" value="#{clienteBean.cliente.tipoPessoa}" requiredMessage="Campo obrigatório">
+                            <h:selectOneMenu id="tipoPessoa" value="#{clienteBean.cliente.tipoPessoa}" requiredMessage="Campo obrigatório" required="true">
                                 <f:selectItem itemValue="" itemLabel="Seleciona o tipo" />
                                 <f:selectItems value="#{clienteBean.tipos}" var="t" itemLabel="#{t.descricao}" itemValue="#{t}"  />
                             </h:selectOneMenu>
