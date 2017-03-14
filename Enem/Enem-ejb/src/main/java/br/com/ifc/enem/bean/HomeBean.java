@@ -8,6 +8,7 @@ import br.com.ifc.enem.bean.remote.HomeBeanRemote;
 import br.com.ifc.enem.entidades.Usuarios;
 import br.com.ifc.enem.util.JpaUtil;
 import java.util.List;
+import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 
 /**

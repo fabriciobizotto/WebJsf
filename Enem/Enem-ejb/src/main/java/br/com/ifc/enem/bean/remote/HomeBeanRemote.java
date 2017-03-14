@@ -7,11 +7,13 @@ package br.com.ifc.enem.bean.remote;
 
 import br.com.ifc.enem.entidades.Usuarios;
 import java.util.List;
+import javax.ejb.Remote;
 
 /**
  *
  * @author fabricio
  */
+@Remote
 public interface HomeBeanRemote {
 
     public String olaMundo() throws Exception;
